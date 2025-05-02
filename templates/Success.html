@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body{
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-image: url("{% static 'images/po.jpg' %}");
+        }
+    h1{
+        font-size: 2.5em;
+        color:dark black;
+        text-align: center;
+        transform: translateY(130%);
+      }
+    a{
+       text-decoration:None;
+     }
+    h2{
+         font-size: 2.5em;
+         color:dark black;
+         text-align: center;
+         transform: translateY(30%);
+      }
+    h3{
+        font-size: 2.5em;
+        color:dark black;
+        text-align:center;
+        transform: translateY(25%);
+      }
+    h4{
+        font-size:1.5em;
+        color:dark black;
+        text-align:center;
+        transform: translateY(20%)
+      }
+</style>
+<body>
+<h1>Hello {{me}}...!</h1>
+<h2>If you want to learn "Django" i referred you to learn here <a href="https://youtu.be/SIyxjRJ8VNY?si=bq2i6fPaL5MwS_f7" target="_blank" >Visit Once</a> where you can learn how to retrieve data from database, send data to database & few more things & his teaching skills is really good...<h2>
+<h3>Happy learning...💕<h3>
+</body>
+</html>

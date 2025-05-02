@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Text Fields</title>
+</head>
+<body>
+    <h2>Form with Two Text Fields</h2>
+    <form action="samp" method="POST">
+        {% csrf_token %}
+        <label for="text1">Text Field 1:</label>
+        <input type="text" id="text1" name="text1" required>
+        <br><br>
+
+        <label for="text2">Text Field 2:</label>
+        <input type="text" id="text2" name="text2" required>
+        <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

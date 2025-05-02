@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in list %}
+{% if i.yn %}
+<h1>Fruit name is {{i.name}} and price is {{i.price}}</h1>
+{% endif %}
+{% endfor %}
+
+</body>
+</html>
